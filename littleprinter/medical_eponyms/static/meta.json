@@ -1,0 +1,10 @@
+{
+  "owner_email": "jacobo.tarragon@gmail.com",
+  "publication_api_version": "1.0",
+  "name": "Medical Eponyms",
+  "description": "Medical eponyms ",
+  "delivered_on": "every Monday, Wednesday and Friday",
+  "external_configuration": false,
+  "send_timezone_info": true,
+  "send_delivery_count": false
+}

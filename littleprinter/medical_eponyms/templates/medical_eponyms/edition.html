@@ -1,0 +1,24 @@
+{% extends "publications/publication.html" %}
+{% load absolute %}
+
+{% block title %}Medical Eponyms - {{ eponym.name }}{% endblock %}
+
+{% block publication_style %}
+	{{ block.super }}
+	<style type="text/css" media="screen">
+		.altname {
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+{% endblock %}
+
+{% block content %}
+	<h1>{{ eponym.name }}</h1>
+	{% if eponym.altname %}
+	    <p class="altname">also known as {{ eponym.title }}</p>
+	{% endif %}
+	<div id="content">
+		<p>{{ eponym.summary|linebreaks|truncatewords:80 }}</p>
+	</div>
+{% endblock %}
